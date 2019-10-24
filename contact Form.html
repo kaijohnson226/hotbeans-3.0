@@ -4,9 +4,50 @@
 <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"border":"thick","corners":"large","colors":{"popup":{"background":"#491b1b","text":"#ffffff","border":"#e6b3b3"},"button":{"background":"#e6b3b3","text":"#000000"}},"position":"bottom","padding":"large","margin":"small","transparency":"25","fontsize":"large","content":{"href":"https://kaijohnson226.github.io/hotbeans-3.0/","button":"okie dokie","link":"find out more"}})});</script>
 
 
+
+
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-* {
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #002CFF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FF00ED;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+	
+	
+	
+	
+	
+	* {
   box-sizing: border-box;
 }
 
@@ -74,7 +115,7 @@ body {
   float: left;
   width: 33.33%;
   padding: 10px;
-  background-color: #ccc;
+  background-color: #F000FF;
   height: 250px;
 }
 
@@ -165,7 +206,7 @@ ul li{
 </style>
 </head>
 <body bgcolor="#FF0004">
-<div class="navbar"><a href="#home">Home</a>
+<div class="navbar"><a href="index.html">Home</a>
   <img src="logo.png" width="75" height="75" alt=""/>
   <div class="dropdown">
     <button class="dropbtn">Menu 
@@ -178,15 +219,15 @@ ul li{
       <div class="row">
         <div class="column">
           <h3>Jobs</h3>
-          <a href="#">Form</a>
-          <a href="#">What our jobs is about</a>
-          <a href="#">How to apply</a>
+          <a href="contact Form.html"> Contact Form</a>
+          <a href="what our jobs are about.html">What our jobs is about</a>
+          <a href="how to apply.html">How to apply</a>
         </div>
         <div class="column">
           <h3></h3>
-          <a href="#">Contact us</a>
-          <a href="#">profile</a>
-          <a href="#">existing trainee</a>
+          <a href="contact us.html">Contact us</a>
+          <a href="profile.html">profile</a>
+          <a href="existing trainee.html">existing trainee</a>
         </div>
        
       </div>
@@ -205,20 +246,34 @@ ul li{
   <tbody>
    
     <tr>
-      <td height="100">&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td height="73">&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td height="194">&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody>
+      <td rowspan="3"><h3>Contact Form</h3>
+please fill this is so we know who you are and where u are from. also put your email in the write something section thank u hotbeans comapany 
+<div class="container">
+  <form action="https://formspree.io/mpvgylgm" method="POST">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="usa">Uk</option>
+      <option value="usa">other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</td>
+  
+
 </table>
 
 </body>
